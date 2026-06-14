@@ -1,0 +1,33 @@
+# Uploaded CVs and profile pictures (user data — do not commit)
+uploads/exports/*
+uploads/profile_pics/*
+
+# Keep the upload directories themselves
+!uploads/exports/.gitkeep
+!uploads/profile_pics/.gitkeep
+
+# Sensitive config (DB credentials, etc.)
+config/db.php
+config/*.local.php
+config/.env
+
+# Backup dumps
+backup/*.sql
+backup/*.zip
+
+# Employee Excel data
+emp data in excel/
+
+# PHP cache / IDE / OS noise
+.vscode/settings.json
+*.log
+Thumbs.db
+.DS_Store
+
+# Node / React build artifacts
+dashboard-react/node_modules/
+dashboard-react/.env
+dashboard-react/build/
+
+# Temp / test output
+test/output/

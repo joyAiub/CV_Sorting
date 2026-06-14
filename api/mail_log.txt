@@ -1,0 +1,348 @@
+[2026-04-29 13:09:09] Starting notification: Type=creation, JD=JD48783, JobID=119
+[2026-04-29 13:09:09] Creation delay: Sleeping for 5 minutes...
+[2026-04-29 13:10:57] Starting notification: Type=completion, JD=, JobID=117
+[2026-04-29 13:10:57] Error: Missing type or JD ID
+[2026-04-29 13:11:12] Starting notification: Type=creation, JD=JD15189, JobID=120
+[2026-04-29 13:11:12] Creation delay: Sleeping for 5 minutes...
+[2026-04-29 13:13:09] Starting notification: Type=completion, JD=JD30639, JobID=117
+[2026-04-29 13:13:09] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-29 13:13:13] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-29 13:14:09] Error: Job data not found for ID 119 or JD JD48783
+[2026-04-29 13:16:12] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-29 13:16:16] Creation Mail sent to joy.ballav@mgi.org. Result: Success
+[2026-04-29 13:16:17] Starting notification: Type=creation, JD=JD76848, JobID=121
+[2026-04-29 13:16:17] Creation delay: Sleeping for 5 minutes...
+[2026-04-29 13:21:17] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-29 13:21:21] Creation Mail sent to joy.ballav@mgi.org. Result: Success
+[2026-04-29 13:21:52] Starting notification: Type=completion, JD=JD76848, JobID=121
+[2026-04-29 13:21:52] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-29 13:21:55] Completion Mail sent to Concern (zubair.tareque@mgi.org). Result: Success
+[2026-04-29 13:21:58] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 04:33:31] Starting notification: Type=completion, JD=JD61353, JobID=62
+[2026-04-30 04:33:31] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-04-30 04:33:35] Completion Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-04-30 04:35:46] Starting notification: Type=creation, JD=JD47966, JobID=122
+[2026-04-30 04:35:46] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 04:40:46] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 04:40:50] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 04:40:53] Creation Mail sent to Concern (zubair.tareque@mgi.org). Result: Success
+[2026-04-30 04:41:01] Starting notification: Type=completion, JD=JD47966, JobID=122
+[2026-04-30 04:41:01] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 04:41:05] Completion Mail sent to Concern (zubair.tareque@mgi.org). Result: Success
+[2026-04-30 04:41:08] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 05:15:39] Starting notification: Type=completion, JD=JD47966, JobID=122
+[2026-04-30 05:15:39] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 05:15:43] Completion Mail sent to Concern (zubair.tareque@mgi.org). Result: Success
+[2026-04-30 05:15:46] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 05:28:00] Starting notification: Type=completion, JD=JD47966, JobID=122
+[2026-04-30 05:28:00] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 05:28:08] Completion Mail sent to Concern (zubair.tareque@mgi.org). Result: Success
+[2026-04-30 05:28:11] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 06:09:49] Starting notification: Type=creation, JD=JD64599, JobID=123
+[2026-04-30 06:09:49] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 06:14:49] Error: Job data not found for ID 123 or JD JD64599
+[2026-04-30 06:47:41] Starting notification: Type=creation, JD=JD91485, JobID=124
+[2026-04-30 06:47:41] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 06:52:41] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 06:52:45] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 07:00:09] Starting notification: Type=completion, JD=JD91485, JobID=124
+[2026-04-30 07:00:09] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 07:00:13] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 07:03:39] Starting notification: Type=creation, JD=JD79869, JobID=125
+[2026-04-30 07:03:39] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 07:08:39] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 07:08:43] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 07:09:00] Starting notification: Type=completion, JD=JD79869, JobID=125
+[2026-04-30 07:09:00] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 07:09:03] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 07:12:10] Starting notification: Type=creation, JD=JD21283, JobID=126
+[2026-04-30 07:12:10] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 07:17:10] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 07:17:13] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 07:17:30] Starting notification: Type=completion, JD=JD21283, JobID=126
+[2026-04-30 07:17:30] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 07:17:33] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 07:25:59] Starting notification: Type=creation, JD=JD99613, JobID=127
+[2026-04-30 07:25:59] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 07:30:59] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 07:31:02] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 07:31:05] Creation Mail sent to Concern (mohit.hasnain@mgi.org). Result: Success
+[2026-04-30 07:31:41] Starting notification: Type=completion, JD=JD99613, JobID=127
+[2026-04-30 07:31:41] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 07:31:44] Completion Mail sent to Concern (mohit.hasnain@mgi.org). Result: Success
+[2026-04-30 07:31:47] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 07:52:04] Starting notification: Type=creation, JD=JD72614, JobID=128
+[2026-04-30 07:52:04] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 07:54:16] Starting notification: Type=creation, JD=JD81893, JobID=129
+[2026-04-30 07:54:16] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 07:57:04] Error: Job data not found for ID 128 or JD JD72614
+[2026-04-30 07:58:37] Starting notification: Type=creation, JD=JD71021, JobID=130
+[2026-04-30 07:58:37] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 07:59:16] Error: Job data not found for ID 129 or JD JD81893
+[2026-04-30 08:03:37] Error: Job data not found for ID 130 or JD JD71021
+[2026-04-30 08:05:09] Starting notification: Type=creation, JD=JD85839, JobID=131
+[2026-04-30 08:05:09] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 08:10:09] Error: Job data not found for ID 131 or JD JD85839
+[2026-04-30 08:10:18] Starting notification: Type=creation, JD=JD57226, JobID=132
+[2026-04-30 08:10:18] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 08:15:18] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 08:15:20] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 09:56:39] Starting notification: Type=creation, JD=JD77393, JobID=133
+[2026-04-30 09:56:39] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 10:01:39] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-04-30 10:01:43] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-04-30 10:57:28] Starting notification: Type=creation, JD=JD96451, JobID=134
+[2026-04-30 10:57:28] Creation delay: Sleeping for 5 minutes...
+[2026-04-30 11:02:28] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-04-30 11:02:31] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-04-30 11:21:55] Starting notification: Type=completion, JD=JD96451, JobID=134
+[2026-04-30 11:21:55] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-04-30 11:21:59] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-02 05:20:38] Starting notification: Type=creation, JD=JD62627, JobID=135
+[2026-05-02 05:20:38] Creation delay: Sleeping for 5 minutes...
+[2026-05-02 05:22:00] Starting notification: Type=creation, JD=JD32323, JobID=136
+[2026-05-02 05:22:00] Creation delay: Sleeping for 5 minutes...
+[2026-05-02 05:22:16] Starting notification: Type=creation, JD=JD45833, JobID=137
+[2026-05-02 05:22:16] Creation delay: Sleeping for 5 minutes...
+[2026-05-02 05:25:38] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-02 05:25:41] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-02 05:27:00] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-02 05:27:02] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-02 05:27:16] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-02 05:27:19] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-02 09:53:14] Starting notification: Type=completion, JD=JD62627, JobID=135
+[2026-05-02 09:53:14] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-02 09:53:17] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-02 10:51:49] Starting notification: Type=completion, JD=JD32323, JobID=136
+[2026-05-02 10:51:49] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-02 10:51:52] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-02 11:56:08] Starting notification: Type=completion, JD=JD45833, JobID=137
+[2026-05-02 11:56:08] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-02 11:56:12] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-03 05:51:18] Starting notification: Type=creation, JD=JD53593, JobID=138
+[2026-05-03 05:51:18] Creation delay: Sleeping for 5 minutes...
+[2026-05-03 05:55:52] Starting notification: Type=creation, JD=JD26783, JobID=139
+[2026-05-03 05:55:52] Creation delay: Sleeping for 5 minutes...
+[2026-05-03 05:56:18] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-03 05:56:22] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-03 06:00:52] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-03 06:00:55] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-03 06:02:33] Starting notification: Type=completion, JD=JD53593, JobID=138
+[2026-05-03 06:02:33] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-03 06:02:36] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-03 06:03:02] Starting notification: Type=completion, JD=JD26783, JobID=139
+[2026-05-03 06:03:02] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-03 06:03:06] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-03 09:25:25] Starting notification: Type=creation, JD=JD51696, JobID=140
+[2026-05-03 09:25:25] Creation delay: Sleeping for 5 minutes...
+[2026-05-03 09:26:24] Starting notification: Type=creation, JD=JD31401, JobID=141
+[2026-05-03 09:26:24] Creation delay: Sleeping for 5 minutes...
+[2026-05-03 09:28:59] Starting notification: Type=creation, JD=JD62325, JobID=142
+[2026-05-03 09:28:59] Creation delay: Sleeping for 5 minutes...
+[2026-05-03 09:30:25] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-03 09:30:29] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-03 09:31:24] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-03 09:31:27] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-03 09:31:50] Starting notification: Type=creation, JD=JD57976, JobID=143
+[2026-05-03 09:31:50] Creation delay: Sleeping for 5 minutes...
+[2026-05-03 09:32:24] Starting notification: Type=completion, JD=JD51696, JobID=140
+[2026-05-03 09:32:24] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-03 09:32:27] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-03 09:33:44] Starting notification: Type=completion, JD=JD31401, JobID=141
+[2026-05-03 09:33:44] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-03 09:33:46] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-03 09:33:59] Error: Job data not found for ID 142 or JD JD62325
+[2026-05-03 09:36:50] Error: Job data not found for ID 143 or JD JD57976
+[2026-05-03 12:05:55] Starting notification: Type=creation, JD=JD21694, JobID=144
+[2026-05-03 12:05:55] Creation delay: Sleeping for 5 minutes...
+[2026-05-03 12:10:55] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-03 12:10:58] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-03 12:11:18] Starting notification: Type=completion, JD=JD21694, JobID=144
+[2026-05-03 12:11:18] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-03 12:11:22] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-04 04:55:04] Starting notification: Type=creation, JD=JD76453, JobID=145
+[2026-05-04 04:55:04] Creation delay: Sleeping for 5 minutes...
+[2026-05-04 05:00:04] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-04 05:00:07] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-04 05:00:33] Starting notification: Type=completion, JD=JD76453, JobID=145
+[2026-05-04 05:00:33] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-04 05:00:36] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-06 07:05:39] Starting notification: Type=creation, JD=JD83330, JobID=146
+[2026-05-06 07:05:39] Creation delay: Sleeping for 5 minutes...
+[2026-05-06 07:10:39] Error: Job data not found for ID 146 or JD JD83330
+[2026-05-06 09:31:30] Starting notification: Type=creation, JD=JD44441, JobID=147
+[2026-05-06 09:31:30] Creation delay: Sleeping for 5 minutes...
+[2026-05-06 09:36:30] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-06 09:36:33] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-06 09:36:53] Starting notification: Type=completion, JD=JD44441, JobID=147
+[2026-05-06 09:36:53] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-06 09:36:56] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-06 10:17:02] Starting notification: Type=creation, JD=JD98034, JobID=148
+[2026-05-06 10:17:02] Creation delay: Sleeping for 5 minutes...
+[2026-05-06 10:22:02] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-06 10:22:04] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-06 10:22:07] Creation Mail sent to Concern (utsha.dhar@mgi.org). Result: Success
+[2026-05-06 12:18:20] Starting notification: Type=creation, JD=JD70972, JobID=149
+[2026-05-06 12:18:20] Creation delay: Sleeping for 5 minutes...
+[2026-05-06 12:23:20] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-05-06 12:23:23] Creation Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-05-06 12:26:43] Starting notification: Type=creation, JD=JD92279, JobID=150
+[2026-05-06 12:26:43] Creation delay: Sleeping for 5 minutes...
+[2026-05-06 12:31:43] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-05-06 12:31:46] Creation Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-05-06 12:35:06] Starting notification: Type=creation, JD=JD79208, JobID=151
+[2026-05-06 12:35:06] Creation delay: Sleeping for 5 minutes...
+[2026-05-06 12:40:06] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-05-06 12:40:10] Creation Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-05-06 14:50:24] Starting notification: Type=completion, JD=JD79208, JobID=151
+[2026-05-06 14:50:24] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-05-06 14:50:28] Completion Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-05-11 10:05:59] Starting notification: Type=creation, JD=JD57291, JobID=152
+[2026-05-11 10:05:59] Creation delay: Sleeping for 5 minutes...
+[2026-05-11 10:10:59] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-11 10:11:02] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-11 10:24:17] Starting notification: Type=creation, JD=JD35096, JobID=153
+[2026-05-11 10:24:17] Creation delay: Sleeping for 5 minutes...
+[2026-05-11 10:29:17] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-11 10:29:20] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-11 10:29:51] Starting notification: Type=completion, JD=JD35096, JobID=153
+[2026-05-11 10:29:51] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-11 10:29:54] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-11 10:36:37] Starting notification: Type=completion, JD=JD35096, JobID=153
+[2026-05-11 10:36:37] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-11 10:36:40] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-11 11:41:45] Starting notification: Type=completion, JD=JD35096, JobID=153
+[2026-05-11 11:41:45] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-11 11:41:48] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-11 11:45:50] Starting notification: Type=completion, JD=JD35096, JobID=153
+[2026-05-11 11:45:50] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-11 11:45:53] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-11 13:36:04] Starting notification: Type=completion, JD=JD57291, JobID=152
+[2026-05-11 13:36:04] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-11 13:36:07] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-12 11:48:12] Starting notification: Type=creation, JD=JD46535, JobID=154
+[2026-05-12 11:48:12] Creation delay: Sleeping for 5 minutes...
+[2026-05-12 11:53:12] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-12 11:53:16] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-12 12:20:24] Starting notification: Type=creation, JD=JD75469, JobID=155
+[2026-05-12 12:20:24] Creation delay: Sleeping for 5 minutes...
+[2026-05-12 12:25:24] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-12 12:25:28] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-12 15:12:31] Starting notification: Type=completion, JD=JD46535, JobID=154
+[2026-05-12 15:12:31] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-12 15:12:34] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-13 04:06:27] Starting notification: Type=creation, JD=JD80078, JobID=156
+[2026-05-13 04:06:27] Creation delay: Sleeping for 5 minutes...
+[2026-05-13 04:11:27] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-05-13 04:11:30] Creation Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-05-13 04:15:25] Starting notification: Type=creation, JD=JD94571, JobID=157
+[2026-05-13 04:15:25] Creation delay: Sleeping for 5 minutes...
+[2026-05-13 04:20:25] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-13 04:20:29] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-13 04:25:28] Starting notification: Type=creation, JD=JD20896, JobID=158
+[2026-05-13 04:25:28] Creation delay: Sleeping for 5 minutes...
+[2026-05-13 04:26:50] Starting notification: Type=creation, JD=JD44150, JobID=159
+[2026-05-13 04:26:50] Creation delay: Sleeping for 5 minutes...
+[2026-05-13 04:30:28] Error: Job data not found for ID 158 or JD JD20896
+[2026-05-13 04:31:50] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-13 04:31:54] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-13 07:55:48] Starting notification: Type=completion, JD=JD44150, JobID=159
+[2026-05-13 07:55:48] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-13 07:55:52] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-13 10:14:00] Starting notification: Type=creation, JD=JD26748, JobID=160
+[2026-05-13 10:14:00] Creation delay: Sleeping for 5 minutes...
+[2026-05-13 10:19:00] Error: Job data not found for ID 160 or JD JD26748
+[2026-05-13 10:23:46] Starting notification: Type=creation, JD=JD20834, JobID=161
+[2026-05-13 10:23:46] Creation delay: Sleeping for 5 minutes...
+[2026-05-13 10:28:46] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-13 10:28:50] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-13 10:28:54] Creation Mail sent to Concern (kawsar.jamil@mgi.org). Result: Success
+[2026-05-13 11:06:29] Starting notification: Type=completion, JD=JD20834, JobID=161
+[2026-05-13 11:06:29] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-13 11:06:32] Completion Mail sent to Concern (kawsar.jamil@mgi.org). Result: Success
+[2026-05-13 11:06:36] Completion Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-14 06:06:29] Starting notification: Type=creation, JD=JD26540, JobID=162
+[2026-05-14 06:06:29] Creation delay: Sleeping for 5 minutes...
+[2026-05-14 06:11:29] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-14 06:11:32] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-14 06:11:48] Starting notification: Type=completion, JD=JD26540, JobID=162
+[2026-05-14 06:11:48] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-14 06:11:52] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-17 12:17:08] Starting notification: Type=creation, JD=JD32927, JobID=163
+[2026-05-17 12:17:08] Creation delay: Sleeping for 5 minutes...
+[2026-05-17 12:22:08] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-17 12:22:12] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-17 12:23:08] Starting notification: Type=creation, JD=JD48593, JobID=164
+[2026-05-17 12:23:08] Creation delay: Sleeping for 5 minutes...
+[2026-05-17 12:28:08] Error: Job data not found for ID 164 or JD JD48593
+[2026-05-19 04:34:39] Starting notification: Type=creation, JD=JD11482, JobID=165
+[2026-05-19 04:34:39] Creation delay: Sleeping for 5 minutes...
+[2026-05-19 04:39:39] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-19 04:39:43] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-19 05:00:25] Starting notification: Type=creation, JD=JD77126, JobID=166
+[2026-05-19 05:00:25] Creation delay: Sleeping for 5 minutes...
+[2026-05-19 05:00:58] Starting notification: Type=creation, JD=JD43479, JobID=167
+[2026-05-19 05:00:58] Creation delay: Sleeping for 5 minutes...
+[2026-05-19 05:05:25] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-19 05:05:28] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-19 05:05:58] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-19 05:06:01] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-19 05:11:43] Starting notification: Type=creation, JD=JD86931, JobID=168
+[2026-05-19 05:11:43] Creation delay: Sleeping for 5 minutes...
+[2026-05-19 05:13:24] Starting notification: Type=creation, JD=JD58163, JobID=169
+[2026-05-19 05:13:24] Creation delay: Sleeping for 5 minutes...
+[2026-05-19 05:16:43] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-19 05:16:47] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-19 05:18:24] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-05-19 05:18:27] Creation Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-05-19 10:34:15] Starting notification: Type=completion, JD=JD77126, JobID=166
+[2026-05-19 10:34:15] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-19 10:34:18] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-20 04:47:34] Starting notification: Type=completion, JD=JD86931, JobID=168
+[2026-05-20 04:47:34] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-20 04:47:38] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-20 06:40:39] Starting notification: Type=completion, JD=JD86931, JobID=168
+[2026-05-20 06:40:39] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-20 06:40:42] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-20 07:08:57] Starting notification: Type=completion, JD=JD86931, JobID=168
+[2026-05-20 07:08:57] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-20 07:09:01] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-05-20 13:23:30] Starting notification: Type=creation, JD=JD62006, JobID=170
+[2026-05-20 13:23:30] Creation delay: Sleeping for 5 minutes...
+[2026-05-20 13:28:30] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-05-20 13:28:33] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-05-24 06:01:49] Starting notification: Type=creation, JD=JD50493, JobID=171
+[2026-05-24 06:01:49] Creation delay: Sleeping for 5 minutes...
+[2026-05-24 06:06:49] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-05-24 06:06:53] Creation Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-06-09 04:21:44] Starting notification: Type=creation, JD=JD81426, JobID=172
+[2026-06-09 04:21:44] Creation delay: Sleeping for 5 minutes...
+[2026-06-09 04:26:44] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-06-09 04:26:48] Creation Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-06-09 05:35:42] Starting notification: Type=creation, JD=JD12520, JobID=173
+[2026-06-09 05:35:42] Creation delay: Sleeping for 5 minutes...
+[2026-06-09 05:36:03] Starting notification: Type=creation, JD=JD61504, JobID=174
+[2026-06-09 05:36:03] Creation delay: Sleeping for 5 minutes...
+[2026-06-09 05:36:49] Starting notification: Type=creation, JD=JD10780, JobID=175
+[2026-06-09 05:36:49] Creation delay: Sleeping for 5 minutes...
+[2026-06-09 05:37:11] Starting notification: Type=creation, JD=JD30909, JobID=176
+[2026-06-09 05:37:11] Creation delay: Sleeping for 5 minutes...
+[2026-06-09 05:40:42] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-06-09 05:40:45] Creation Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-06-09 05:41:03] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-06-09 05:41:06] Creation Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-06-09 05:41:49] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-06-09 05:41:52] Creation Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-06-09 05:42:11] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-06-09 05:42:14] Creation Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
+[2026-06-11 12:18:50] Starting notification: Type=creation, JD=JD77935, JobID=177
+[2026-06-11 12:18:50] Creation delay: Sleeping for 5 minutes...
+[2026-06-11 12:23:50] Found Creator: Joy Ballav (joy.ballav@mgi.org)
+[2026-06-11 12:23:54] Creation Mail sent to Creator (joy.ballav@mgi.org). Result: Success
+[2026-06-11 12:23:57] Creation Mail sent to Concern (joy.ballav@mgi.org). Result: Success
+[2026-06-13 09:36:46] Starting notification: Type=completion, JD=JD50493, JobID=171
+[2026-06-13 09:36:46] Found Creator: A. S. M. Kawsar Jamil (kawsar.jamil@mgi.org)
+[2026-06-13 09:36:49] Completion Mail sent to Creator (kawsar.jamil@mgi.org). Result: Success
+[2026-06-13 10:17:35] Starting notification: Type=completion, JD=JD12520, JobID=173
+[2026-06-13 10:17:35] Found Creator: Utsha Dhar (utsha.dhar@mgi.org)
+[2026-06-13 10:17:38] Completion Mail sent to Creator (utsha.dhar@mgi.org). Result: Success
