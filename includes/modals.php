@@ -1032,7 +1032,7 @@ $path_prefix = (strpos($_SERVER['PHP_SELF'], '/view/') !== false) ? '../' : '';
 
                 <div class="table-responsive" style="border: 1px solid var(--border); border-radius: 12px;">
                     <table style="width: 100%; border-collapse: collapse;">
-                        <thead style="position: sticky; top: 0; background: var(--bg-alt); z-index: 10;">
+                        <thead style="background: var(--bg-alt);">
                             <tr>
                                 <th style="text-align: left; padding: 15px; border-bottom: 2px solid var(--border); color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">User</th>
                                 <th style="text-align: center; padding: 15px; border-bottom: 2px solid var(--border); color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Status</th>
