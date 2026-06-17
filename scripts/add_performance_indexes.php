@@ -22,15 +22,14 @@ $indexes = [
 
 echo "<pre>\n";
 foreach ($indexes as $sql) {
-    $result = $conn->query($sql);
-    if ($result) {
+    try {
+        $conn->query($sql);
         echo "OK: $sql\n";
-    } else {
-        // Duplicate key errors are fine — index already exists
-        if (str_contains($conn->error, 'Duplicate key name')) {
+    } catch (mysqli_sql_exception $e) {
+        if (str_contains($e->getMessage(), 'Duplicate key name')) {
             echo "SKIP (already exists): $sql\n";
         } else {
-            echo "ERROR: {$conn->error}\n  SQL: $sql\n";
+            echo "ERROR: {$e->getMessage()}\n  SQL: $sql\n";
         }
     }
 }
