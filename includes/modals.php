@@ -1030,7 +1030,7 @@ $path_prefix = (strpos($_SERVER['PHP_SELF'], '/view/') !== false) ? '../' : '';
                     }
                 </style>
 
-                <div class="table-responsive" style="max-height: 600px; overflow-y: auto; border: 1px solid var(--border); border-radius: 12px;">
+                <div class="table-responsive" style="border: 1px solid var(--border); border-radius: 12px;">
                     <table style="width: 100%; border-collapse: collapse;">
                         <thead style="position: sticky; top: 0; background: var(--bg-alt); z-index: 10;">
                             <tr>
