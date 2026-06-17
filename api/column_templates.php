@@ -13,6 +13,18 @@ $user_id = $_SESSION['employee_id'] ?? $_SESSION['user_id'];
 $method = $_SERVER['REQUEST_METHOD'];
 
 if ($method === 'GET') {
+    // Shortcut: ?action=get_global allows prefetching without a POST body
+    if (($_GET['action'] ?? '') === 'get_global') {
+        $stmt = $conn->prepare("SELECT column_config FROM user_column_templates WHERE user_id = 0 AND template_name = 'GLOBAL_DEFAULT' LIMIT 1");
+        $stmt->execute();
+        $res = $stmt->get_result();
+        if ($row = $res->fetch_assoc()) {
+            echo json_encode(["status" => "success", "data" => json_decode($row['column_config'], true)]);
+        } else {
+            echo json_encode(["status" => "error", "message" => "No global template found"]);
+        }
+        exit;
+    }
     $stmt = $conn->prepare("SELECT id, template_name, column_config, is_default FROM user_column_templates WHERE user_id = ? ORDER BY created_at DESC");
     $stmt->bind_param("s", $user_id);
     $stmt->execute();

@@ -470,16 +470,12 @@ function Dashboard() {
   };
   useEffect(() => {
     const initColumns = async () => {
-      // 1. Fetch Global from server
+      // 1. Fetch Global from server (use prefetch if dashboard.php started it early)
       let serverGlobal = null;
       try {
-        const response = await fetch('../api/column_templates.php', {
-          method: 'POST',
-          body: JSON.stringify({
-            action: 'get_global'
-          })
-        });
-        const result = await response.json();
+        const result = window.__prefetchedColumns ? await window.__prefetchedColumns.finally(() => {
+          window.__prefetchedColumns = null;
+        }) : await fetch('../api/column_templates.php?action=get_global').then(r => r.json());
         if (result.status === 'success' && result.data) {
           serverGlobal = result.data;
           setGlobalCols(serverGlobal);
@@ -530,8 +526,10 @@ function Dashboard() {
       }
 
       // 3. Fallback to Global or Default
+      // Also cache to localStorage so next visit useState reads it instantly (no flash)
       const finalFallback = mergeWithDefaults(serverGlobal);
       if (serverGlobal) {
+        localStorage.setItem('modern_dashboard_columns_v5', JSON.stringify(finalFallback));
         const globalSig = JSON.stringify(finalFallback.map(c => ({
           id: c.id,
           h: !!c.hidden,

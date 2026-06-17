@@ -192,17 +192,20 @@ $reid_token    = isset($_GET['reid'])  ? trim($_GET['reid'])  : '';
         window.jobConcernEmail       = <?php echo json_encode($job_details['concern_email'] ?? ''); ?>;
         window.jobConcernName        = <?php echo json_encode($job_details['concern_name'] ?? ''); ?>;
 
-        // Prefetch candidates immediately â€” runs before Babel compiles the JSX
+        // Prefetch candidates and column layout immediately — both start before React mounts
         (function() {
             var jdId = new URLSearchParams(window.location.search).get('jd_id') || '';
-            if (!jdId) return;
-            window.__prefetchedCandidates = fetch(
-                '../api/get_candidates.php?jd_id=' + encodeURIComponent(jdId) +
-                '&search=&page=1&shortlisted=&confirmation=&sort_by=match&sort_order=DESC&top_n='
-            ).then(function(r){ return r.json(); });
+            if (jdId) {
+                window.__prefetchedCandidates = fetch(
+                    '../api/get_candidates.php?jd_id=' + encodeURIComponent(jdId) +
+                    '&search=&page=1&shortlisted=&confirmation=&sort_by=match&sort_order=DESC&top_n='
+                ).then(function(r){ return r.json(); });
+            }
+            window.__prefetchedColumns = fetch('../api/column_templates.php?action=get_global')
+                .then(function(r){ return r.json(); });
         })();
     </script>
-    <script src="../js/dashboard-app.js?v=2"></script>
+    <script src="../js/dashboard-app.js?v=3"></script>
 
     <?php include("../includes/modals.php"); ?>
     <script src="../js/script.js?v=<?php echo filemtime(__DIR__.'/../js/script.js'); ?>"></script>
