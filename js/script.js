@@ -106,7 +106,7 @@ window.setTaskViewMode = function(mode) {
         }
     }
     
-    if (typeof window.applyJobFilters === 'function') {
+    if (window.allJobsData.length > 0 && typeof window.applyJobFilters === 'function') {
         window.applyJobFilters();
     }
 };
@@ -1654,8 +1654,9 @@ async function loadJobList() {
     if (!container) return;
 
     try {
-        const response = await fetch(getApiUrl('get_jobs.php'));
-        const result = await response.json();
+        const result = window.__prefetchedJobs
+            ? await window.__prefetchedJobs.finally(() => { window.__prefetchedJobs = null; })
+            : await fetch(getApiUrl('get_jobs.php')).then(r => r.json());
 
         if (result.status === 'success' && Array.isArray(result.data)) {
             window.allJobsData = result.data;

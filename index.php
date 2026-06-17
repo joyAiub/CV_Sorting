@@ -275,6 +275,7 @@ if ((!isset($_SESSION['full_name']) || !isset($_SESSION['employee_id'])) && isse
     </style>
 </head>
 <body>
+    <script>window.__prefetchedJobs = fetch('api/get_jobs.php').then(function(r){ return r.json(); });</script>
     <!-- Top Navigation Bar -->
     <div class="top-nav">
         <div class="top-nav-left">
