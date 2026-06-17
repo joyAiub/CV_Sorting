@@ -1038,7 +1038,7 @@ $path_prefix = (strpos($_SERVER['PHP_SELF'], '/view/') !== false) ? '../' : '';
                                 <th style="text-align: center; padding: 15px; border-bottom: 2px solid var(--border); color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Status</th>
                                 <th style="text-align: center; padding: 15px; border-bottom: 2px solid var(--border); color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Role</th>
                                 <th style="text-align: left; padding: 15px; border-bottom: 2px solid var(--border); color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Last Active</th>
-                                <th style="text-align: left; padding: 15px; border-bottom: 2px solid var(--border); color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Last IP</th>
+                                <th style="text-align: left; padding: 15px; border-bottom: 2px solid var(--border); color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">PC IP / Network IP</th>
                             </tr>
                         </thead>
                         <tbody id="userActivityBody">

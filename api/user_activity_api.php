@@ -21,7 +21,7 @@ switch ($action) {
     case 'list':
         // A user is considered "Online" if they had activity in the last 2 minutes
         // We count distinct sessions to see how many devices are connected
-        $query = "SELECT u.id, u.username, u.employee_id, u.role, u.last_activity, u.last_ip, e.full_name, e.department,
+        $query = "SELECT u.id, u.username, u.employee_id, u.role, u.last_activity, u.last_ip, u.local_ip, e.full_name, e.department,
                   CASE WHEN u.last_activity >= NOW() - INTERVAL 2 MINUTE THEN 'online' ELSE 'offline' END as online_status,
                   TIMESTAMPDIFF(SECOND, u.last_activity, NOW()) as seconds_ago,
                   (SELECT COUNT(*) FROM user_sessions us WHERE us.user_id = u.id AND us.last_activity >= NOW() - INTERVAL 2 MINUTE) as session_count

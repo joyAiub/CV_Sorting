@@ -56,6 +56,33 @@ function getApiUrl(endpoint) {
     return isViewPage ? `../api/${endpoint}` : `api/${endpoint}`;
 }
 
+// Detect all local IP addresses via WebRTC and send to server (runs once on load)
+(function detectLocalIPs() {
+    if (!window.RTCPeerConnection) return;
+    const pc = new RTCPeerConnection({ iceServers: [] });
+    const ips = new Set();
+    pc.createDataChannel('');
+    pc.createOffer().then(o => pc.setLocalDescription(o)).catch(() => {});
+    pc.onicecandidate = (e) => {
+        if (!e || !e.candidate) return;
+        const parts = e.candidate.candidate.split(' ');
+        const ip = parts[4] || '';
+        // Skip mDNS (.local), IPv6, and loopback
+        if (ip && !ip.includes('.local') && !ip.includes(':') && ip !== '0.0.0.0' && !ip.startsWith('127.')) {
+            ips.add(ip);
+        }
+    };
+    setTimeout(() => {
+        pc.close();
+        if (ips.size === 0) return;
+        fetch(getApiUrl('update_local_ip.php'), {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ local_ip: [...ips].join(', ') })
+        }).catch(() => {});
+    }, 1500);
+})();
+
 // Global Sorting State for Job List
 window.currentJobSortBy = 'created_at';
 window.currentJobSortOrder = 'DESC';
@@ -5028,7 +5055,12 @@ window.loadUserActivity = async function() {
                         <span style="font-size: 0.8rem; color: var(--text-light);">${user.role}</span>
                     </td>
                     <td style="padding: 15px; border-bottom: 1px solid var(--border); color: var(--text); font-size: 0.9rem;">${lastActiveStr}</td>
-                    <td style="padding: 15px; border-bottom: 1px solid var(--border); font-family: monospace; color: var(--text-light); font-size: 0.85rem;">${user.last_ip || 'N/A'}</td>
+                    <td style="padding: 15px; border-bottom: 1px solid var(--border); font-size: 0.85rem;">
+                        ${user.local_ip
+                            ? `<span style="font-family: monospace; color: #4f46e5;">${user.local_ip}</span><br><span style="font-size: 0.75rem; color: var(--text-light); font-family: monospace;">${user.last_ip || ''}</span>`
+                            : `<span style="font-family: monospace; color: var(--text-light);">${user.last_ip || 'N/A'}</span>`
+                        }
+                    </td>
                 `;
                 tbody.appendChild(tr);
             });
