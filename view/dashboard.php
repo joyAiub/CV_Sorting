@@ -53,19 +53,19 @@ $reid_token    = isset($_GET['reid'])  ? trim($_GET['reid'])  : '';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Dashboard | CV Sorting</title>
     
-    <!-- React & Babel CDN -->
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+    <!-- React & Babel (local vendor) -->
+    <script src="../js/vendor/react.production.min.js"></script>
+    <script src="../js/vendor/react-dom.production.min.js"></script>
+    <script src="../js/vendor/babel.min.js"></script>
+
+    <!-- Tailwind CSS (local vendor) -->
+    <script src="../js/vendor/tailwindcss.js"></script>
+
     <!-- Icons & Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/vendor/lucide.min.js"></script>
+    <script src="../js/vendor/sweetalert2.min.js"></script>
 
     <script>
         tailwind.config = {
