@@ -3279,10 +3279,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.isPublicMode) {
             loadCandidates(1);
         } else {
-            loadStatuses().then(() => {
-                if (document.getElementById('jobList')) loadJobList();
-                if (document.getElementById('candidateBody')) loadCandidates(1);
-            });
+            // Fire in parallel — jobs/candidates don't depend on statuses being ready
+            loadStatuses();
+            if (document.getElementById('jobList')) loadJobList();
+            if (document.getElementById('candidateBody')) loadCandidates(1);
         }
     }
 

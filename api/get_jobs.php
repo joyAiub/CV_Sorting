@@ -19,12 +19,13 @@ $conn->query("UPDATE Job_List SET status = 'pending' WHERE LOWER(TRIM(status)) =
 // For Manual tasks, it skips 'pending' and goes straight to 'downloaded'
 $conn->query("UPDATE Job_List SET status = 'downloaded' WHERE LOWER(TRIM(status)) = 'created' AND LOWER(TRIM(source)) = 'manual' AND created_at <= DATE_SUB(NOW(), INTERVAL $edit_limit_mins MINUTE)");
 
-// Optimized Main Query
+// Optimized Main Query — derived table avoids correlated subquery per row
 $query = "SELECT j.*, e.full_name as creator_name, p.id as prompt_id, p.prompt_text
           FROM Job_List j
           LEFT JOIN users u ON j.created_by = u.username
           LEFT JOIN employees e ON u.employee_id = e.employee_id
-          LEFT JOIN prompts p ON j.jd_id = p.jd_id AND p.id = (SELECT MAX(id) FROM prompts WHERE jd_id = j.jd_id)
+          LEFT JOIN (SELECT jd_id, MAX(id) AS max_id FROM prompts GROUP BY jd_id) lp ON lp.jd_id = j.jd_id
+          LEFT JOIN prompts p ON p.id = lp.max_id
           LEFT JOIN job_statuses js ON j.status = js.status_name
           ORDER BY COALESCE(js.display_order, 9999) ASC, j.created_at DESC";
 

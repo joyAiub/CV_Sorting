@@ -18,6 +18,8 @@ $indexes = [
     "ALTER TABLE job_list ADD INDEX idx_status (status)",
     // job_list: filter by created_by
     "ALTER TABLE job_list ADD INDEX idx_created_by (created_by)",
+    // prompts: GROUP BY jd_id in get_jobs.php derived table
+    "ALTER TABLE prompts ADD INDEX idx_jd_id (jd_id)",
 ];
 
 echo "<pre>\n";
