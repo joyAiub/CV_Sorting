@@ -104,7 +104,6 @@ if ((!isset($_SESSION['full_name']) || !isset($_SESSION['employee_id'])) && isse
     <script src="js/vendor/tailwindcss.js" defer></script>
     <script src="js/vendor/react.production.min.js" defer></script>
     <script src="js/vendor/react-dom.production.min.js" defer></script>
-    <script src="js/vendor/babel.min.js" defer></script>
     <style>
         :root { 
             --zoom: 1;
@@ -464,6 +463,7 @@ if ((!isset($_SESSION['full_name']) || !isset($_SESSION['employee_id'])) && isse
         window.canManageRoles = <?php echo has_permission('manage_roles') ? 'true' : 'false'; ?>;
         window.canManageActions = <?php echo has_permission('manage_actions') ? 'true' : 'false'; ?>;
         window.rootAdminId = '<?php include_once("config/auth.php"); echo get_root_admin_id(); ?>';
+        window.isAdmin = <?php echo $is_admin ? 'true' : 'false'; ?>;
         window.isSuperAdmin = <?php echo (isset($_SESSION['username']) && ($_SESSION['username'] === get_root_admin_id() || $_SESSION['role'] === 'super-admin')) ? 'true' : 'false'; ?>;
         window.canAccessChat = <?php echo has_permission('access_chat') ? 'true' : 'false'; ?>;
         window.currentUserPermissions = <?php echo json_encode($_SESSION['permissions'] ?? []); ?>;
@@ -549,77 +549,6 @@ if ((!isset($_SESSION['full_name']) || !isset($_SESSION['employee_id'])) && isse
         setInterval(syncAuthPermissions, 3000);
     </script>
     <script src="js/script.js?v=<?php echo filemtime(__DIR__.'/js/script.js'); ?>"></script>
-    <script type="text/babel">
-        const { useState, useEffect } = React;
-
-        // --- Icons Shorthand ---
-        const Icon = ({ name, className = "" }) => {
-            return <i className={`material-icons ${className}`} style={{ fontSize: 'inherit' }}>{name}</i>;
-        };
-
-        // Shared Sidebar Component
-        <?php include 'includes/sidebar_modern.php'; ?>
-
-        const SidebarRoot = () => {
-            const [showSidebar, setShowSidebar] = useState(false);
-            const [zoom, setZoom] = useState(parseFloat(localStorage.getItem('zoom')) || 1.0);
-            // Initialize from PHP session so sidebar is correct from frame 1 (no flash)
-            const [sidebarPerms, setSidebarPerms] = useState(<?php
-                $p = $_SESSION['permissions'] ?? null;
-                if (is_string($p) && !empty($p)) {
-                    echo $p;
-                } elseif (is_array($p)) {
-                    echo json_encode($p);
-                } else {
-                    echo 'null';
-                }
-            ?>);
-            const [sidebarUser, setSidebarUser] = useState({
-                username: '<?php echo addslashes($_SESSION['username'] ?? ''); ?>',
-                rootAdminId: '<?php echo addslashes(get_root_admin_id()); ?>'
-            });
-
-            useEffect(() => {
-                // Override legacy toggleSidebar
-                window.toggleSidebar = () => setShowSidebar(prev => !prev);
-
-                // Sync zoom with existing CSS variable
-                document.documentElement.style.setProperty('--zoom', zoom);
-                const label = document.getElementById('zoom-percent');
-                if (label) label.innerText = Math.round(zoom * 100) + '%';
-
-                // Listen for real-time permission updates
-                const handlePerms = (e) => {
-                    setSidebarPerms(e.detail.perms);
-                    setSidebarUser({ username: e.detail.username, rootAdminId: e.detail.rootAdminId });
-                };
-                window.addEventListener('permissionsLoaded', handlePerms);
-                return () => window.removeEventListener('permissionsLoaded', handlePerms);
-            }, [zoom]);
-
-            const adjustZoom = (delta) => {
-                const newZoom = Math.max(0.5, Math.min(1.5, zoom + delta));
-                setZoom(newZoom);
-                localStorage.setItem('zoom', newZoom);
-            };
-
-            return (
-                <Sidebar 
-                    showSidebar={showSidebar}
-                    setShowSidebar={setShowSidebar}
-                    isAdmin={<?php echo $is_admin ? 'true' : 'false'; ?>}
-                    zoom={zoom}
-                    adjustZoom={adjustZoom}
-                    isPublic={false}
-                    perms={sidebarPerms}
-                    username={sidebarUser.username}
-                    rootAdminId={sidebarUser.rootAdminId}
-                />
-            );
-        };
-
-        const root = ReactDOM.createRoot(document.getElementById('sidebar-root'));
-        root.render(<SidebarRoot />);
-    </script>
+    <script src="js/sidebar-app.js?v=1" defer></script>
 </body>
 </html>
