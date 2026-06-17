@@ -29,5 +29,9 @@ dashboard-react/node_modules/
 dashboard-react/.env
 dashboard-react/build/
 
+# Babel build tooling (local to server)
+js/node_modules/
+js/package-lock.json
+
 # Temp / test output
 test/output/
