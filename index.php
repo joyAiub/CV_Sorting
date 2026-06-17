@@ -114,10 +114,10 @@ if ((!isset($_SESSION['full_name']) || !isset($_SESSION['employee_id'])) && isse
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="js/vendor/tailwindcss.js"></script>
-    <script src="js/vendor/react.production.min.js"></script>
-    <script src="js/vendor/react-dom.production.min.js"></script>
-    <script src="js/vendor/babel.min.js"></script>
+    <script src="js/vendor/tailwindcss.js" defer></script>
+    <script src="js/vendor/react.production.min.js" defer></script>
+    <script src="js/vendor/react-dom.production.min.js" defer></script>
+    <script src="js/vendor/babel.min.js" defer></script>
     <style>
         :root { 
             --zoom: 1;
@@ -559,7 +559,7 @@ if ((!isset($_SESSION['full_name']) || !isset($_SESSION['employee_id'])) && isse
             }
         });
     </script>
-    <script src="js/script.js?v=<?php echo time(); ?>"></script>
+    <script src="js/script.js?v=<?php echo filemtime(__DIR__.'/js/script.js'); ?>"></script>
     <script type="text/babel">
         const { useState, useEffect } = React;
 

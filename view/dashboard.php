@@ -54,12 +54,12 @@ $reid_token    = isset($_GET['reid'])  ? trim($_GET['reid'])  : '';
     <title>Modern Dashboard | CV Sorting</title>
     
     <!-- React & Babel (local vendor) -->
-    <script src="../js/vendor/react.production.min.js"></script>
-    <script src="../js/vendor/react-dom.production.min.js"></script>
-    <script src="../js/vendor/babel.min.js"></script>
+    <script src="../js/vendor/react.production.min.js" defer></script>
+    <script src="../js/vendor/react-dom.production.min.js" defer></script>
+    <script src="../js/vendor/babel.min.js" defer></script>
 
     <!-- Tailwind CSS (local vendor) -->
-    <script src="../js/vendor/tailwindcss.js"></script>
+    <script src="../js/vendor/tailwindcss.js" defer></script>
 
     <!-- Icons & Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -2111,6 +2111,6 @@ $reid_token    = isset($_GET['reid'])  ? trim($_GET['reid'])  : '';
     </script>
 
     <?php include("../includes/modals.php"); ?>
-    <script src="../js/script.js?v=<?php echo time(); ?>"></script>
+    <script src="../js/script.js?v=<?php echo filemtime(__DIR__.'/../js/script.js'); ?>"></script>
 </body>
 </html>
