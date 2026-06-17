@@ -54,12 +54,12 @@ $reid_token    = isset($_GET['reid'])  ? trim($_GET['reid'])  : '';
     <title>Modern Dashboard | CV Sorting</title>
     
     <!-- React & Babel (local vendor) -->
-    <script src="../js/vendor/react.production.min.js" defer></script>
-    <script src="../js/vendor/react-dom.production.min.js" defer></script>
-    <script src="../js/vendor/babel.min.js" defer></script>
+    <script src="../js/vendor/react.production.min.js"></script>
+    <script src="../js/vendor/react-dom.production.min.js"></script>
+    <script src="../js/vendor/babel.min.js"></script>
 
     <!-- Tailwind CSS (local vendor) -->
-    <script src="../js/vendor/tailwindcss.js" defer></script>
+    <script src="../js/vendor/tailwindcss.js"></script>
 
     <!-- Icons & Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -181,6 +181,16 @@ $reid_token    = isset($_GET['reid'])  ? trim($_GET['reid'])  : '';
         window.feedbackSubmissionCount = <?php echo $feedback_submission_count; ?>;
         window.reviewerName = <?php echo json_encode($reviewer_name); ?>;
         window.reidToken    = <?php echo json_encode($reid_token); ?>;
+
+        // Prefetch candidates immediately — runs before Babel compiles the JSX
+        (function() {
+            var jdId = new URLSearchParams(window.location.search).get('jd_id') || '';
+            if (!jdId) return;
+            window.__prefetchedCandidates = fetch(
+                '../api/get_candidates.php?jd_id=' + encodeURIComponent(jdId) +
+                '&search=&page=1&shortlisted=&confirmation=&sort_by=match&sort_order=DESC&top_n='
+            ).then(function(r){ return r.json(); });
+        })();
     </script>
     <script type="text/babel">
         const { useState, useEffect, useMemo, useCallback, useRef } = React;
@@ -482,8 +492,16 @@ $reid_token    = isset($_GET['reid'])  ? trim($_GET['reid'])  : '';
             const fetchData = useCallback(async (page = 1, isSilent = false) => {
                 if (!isSilent) setLoading(true);
                 try {
-                    const response = await fetch(`../api/get_candidates.php?jd_id=${jdId}&search=${search}&page=${page}&shortlisted=${statusFilter}&confirmation=${confFilter}&sort_by=${sortBy}&sort_order=${sortOrder}&top_n=${topN}`);
-                    const json = await response.json();
+                    // Use prefetched promise on first default load to avoid double-fetch
+                    const isDefaultLoad = page === 1 && !search && !statusFilter && !confFilter && !topN && sortBy === 'match' && sortOrder === 'DESC';
+                    let jsonPromise;
+                    if (isDefaultLoad && window.__prefetchedCandidates) {
+                        jsonPromise = window.__prefetchedCandidates;
+                        window.__prefetchedCandidates = null;
+                    } else {
+                        jsonPromise = fetch(`../api/get_candidates.php?jd_id=${jdId}&search=${search}&page=${page}&shortlisted=${statusFilter}&confirmation=${confFilter}&sort_by=${sortBy}&sort_order=${sortOrder}&top_n=${topN}`).then(r => r.json());
+                    }
+                    const json = await jsonPromise;
                     if (json.status === 'success') {
                         setCandidates(json.data || []);
                         setPagination(json.pagination || { current_page: 1, total_pages: 1 });
