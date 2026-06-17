@@ -202,7 +202,7 @@ $reid_token    = isset($_GET['reid'])  ? trim($_GET['reid'])  : '';
             ).then(function(r){ return r.json(); });
         })();
     </script>
-    <script src="../js/dashboard-app.js?v=1"></script>
+    <script src="../js/dashboard-app.js?v=2"></script>
 
     <?php include("../includes/modals.php"); ?>
     <script src="../js/script.js?v=<?php echo filemtime(__DIR__.'/../js/script.js'); ?>"></script>

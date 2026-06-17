@@ -181,6 +181,22 @@ const Sidebar = ({
             { id: 'actions', label: 'Actions', width: 80, align: 'center' }
         ];
 
+        function mergeColumnsWithDefaults(sourceCols, isPublic) {
+            const effectiveDefaults = isPublic
+                ? DEFAULT_COLUMNS.filter(c => c.id !== 'actions' && c.id !== 'shortlisted' && c.id !== 'confirmation')
+                : DEFAULT_COLUMNS;
+            if (!sourceCols) return effectiveDefaults;
+            const merged = sourceCols.map(s => {
+                const def = effectiveDefaults.find(d => d.id === s.id);
+                if (!def) return null;
+                return { ...def, ...s, label: def.label, width: Math.max(s.width || def.width, 60) };
+            }).filter(Boolean);
+            effectiveDefaults.forEach(def => {
+                if (!merged.find(m => m.id === def.id)) merged.push(def);
+            });
+            return merged;
+        }
+
         function Dashboard() {
             const isPublic       = window.isPublicMode;
             const isAdmin        = window.isAdmin;
@@ -191,19 +207,7 @@ const Sidebar = ({
 
             // Helper to merge source cols with default definitions to ensure all props exist
             const mergeWithDefaults = useCallback((sourceCols) => {
-                const effectiveDefaults = isPublic 
-                    ? DEFAULT_COLUMNS.filter(c => c.id !== 'actions' && c.id !== 'shortlisted' && c.id !== 'confirmation') 
-                    : DEFAULT_COLUMNS;
-                if (!sourceCols) return effectiveDefaults;
-                const merged = sourceCols.map(s => {
-                    const def = effectiveDefaults.find(d => d.id === s.id);
-                    if (!def) return null;
-                    return { ...def, ...s, label: def.label, width: Math.max(s.width || def.width, 60) };
-                }).filter(Boolean);
-                effectiveDefaults.forEach(def => {
-                    if (!merged.find(m => m.id === def.id)) merged.push(def);
-                });
-                return merged;
+                return mergeColumnsWithDefaults(sourceCols, isPublic);
             }, [isPublic]);
             
             const [canSendMail, setCanSendMail] = useState(window.canSendMailInit);
@@ -321,8 +325,15 @@ const Sidebar = ({
             const [loading, setLoading] = useState(true);
             const [expandedAll, setExpandedAll] = useState(true);
             const [columns, setColumns] = useState(() => {
-                return isPublic 
-                    ? DEFAULT_COLUMNS.filter(c => c.id !== 'actions' && c.id !== 'shortlisted' && c.id !== 'confirmation') 
+                // Read localStorage synchronously so first render already uses saved layout
+                if (!isPublic) {
+                    const saved = localStorage.getItem('modern_dashboard_columns_v5');
+                    if (saved) {
+                        try { return mergeColumnsWithDefaults(JSON.parse(saved), false); } catch(e) {}
+                    }
+                }
+                return isPublic
+                    ? DEFAULT_COLUMNS.filter(c => c.id !== 'actions' && c.id !== 'shortlisted' && c.id !== 'confirmation')
                     : DEFAULT_COLUMNS;
             });
             const [editingRowId, setEditingRowId] = useState(null);
