@@ -159,7 +159,7 @@ $reid_token    = isset($_GET['reid'])  ? trim($_GET['reid'])  : '';
     </style>
 
     <!-- Legacy Resources for Modals -->
-    <link rel="stylesheet" href="../css/style.css?v=4.3">
+    <link rel="stylesheet" href="../css/style.css?v=<?php echo filemtime(__DIR__.'/../css/style.css'); ?>">
     
 
 
